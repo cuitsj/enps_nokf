@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 12 19:56:03 2022
+# Process ID: 11020
+# Current directory: G:/VC707/top_enps/top_enps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7396 G:\VC707\top_enps\top_enps\top_enps.xpr
+# Log file: G:/VC707/top_enps/top_enps/vivado.log
+# Journal file: G:/VC707/top_enps/top_enps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/VC707/top_enps/top_enps/top_enps.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 817.484 ; gain = 204.297
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 12 20:00:35 2022] Launched synth_1...
+Run output will be captured here: G:/VC707/top_enps/top_enps/top_enps.runs/synth_1/runme.log
+[Tue Apr 12 20:00:35 2022] Launched impl_1...
+Run output will be captured here: G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/runme.log
+write_cfgmem  -format mcs -size 128 -interface BPIx16 -loadbit {up 0x00000000 "G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps.bit" } -file "G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps_nokf1"
+Command: write_cfgmem -format mcs -size 128 -interface BPIx16 -loadbit {up 0x00000000 "G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps.bit" } -file G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps_nokf1
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps.bit
+Writing file G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps_nokf1.mcs
+Writing log file G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps_nokf1.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0135591B    Apr 12 19:30:11 2022    G:/VC707/top_enps_kf/top_enps/top_enps.runs/impl_1/top_enps.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2025.102 ; gain = 214.469
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A14E25
+set_property PROGRAM.FILE {G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7vx485t_0] -mem_dev [lindex [get_cfgmem_parts {mt28gu01gaax1e-bpi-x16}] 0]
+write_cfgmem  -format mcs -size 128 -interface BPIx16 -loadbit {up 0x00000000 "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit" } -file "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last"
+Command: write_cfgmem -format mcs -size 128 -interface BPIx16 -loadbit {up 0x00000000 "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit" } -file G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 2 due to the use of interface BPIX16.
+Creating bitstream load up from address 0x00000000
+Loading bitfile G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit
+Writing file G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.mcs
+Writing log file G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0135591B    Apr 12 20:04:24 2022    G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2037.203 ; gain = 12.102
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.FILES [list "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.BPI_RS_PINS {none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.PRM_FILES [list "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.prm" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.FILES [list "G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.PRM_FILE {G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps_nokf_last.prm} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.BPI_RS_PINS {none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7vx485t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7vx485t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7vx485t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 BPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7vx485t_0] 0]]
+Mfg ID : 89   Memory Type : 88b0   Memory Capacity : 0   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+program_hw_cfgmem: Time (s): cpu = 00:00:09 ; elapsed = 00:03:40 . Memory (MB): peak = 2037.203 ; gain = 0.000
+endgroup
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 12 20:14:58 2022...

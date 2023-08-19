@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          BPIX16
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0135591B    Apr 12 20:49:02 2022    G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.bit

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/VC707/top_enps/top_enps/top_enps.srcs/sources_1/new/key_launch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_launch
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/VC707/top_enps/top_enps/top_enps.srcs/sim_1/new/tb_key_launch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_key_launch

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 12 20:45:54 2022
+# Process ID: 15316
+# Current directory: G:/VC707/top_enps/top_enps/top_enps.runs/impl_1
+# Command line: vivado.exe -log top_enps.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_enps.tcl -notrace
+# Log file: G:/VC707/top_enps/top_enps/top_enps.runs/impl_1/top_enps.vdi
+# Journal file: G:/VC707/top_enps/top_enps/top_enps.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_enps.tcl -notrace
